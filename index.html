@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- htmlaunch:enhanced:v2 -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22hsl(314%2C72%25%2C58%25)%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22hsl(344%2C72%25%2C44%25)%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2246%22%20text-anchor%3D%22middle%22%20font-family%3D%22ui-sans-serif%2Csystem-ui%2C-apple-system%2CSegoe%20UI%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20fill%3D%22%23ffffff%22%3ET%3C%2Ftext%3E%3C%2Fsvg%3E">
+<meta name="theme-color" content="#4d7b14">
+<meta name="description" content="tyger deck | deployed with HTMLaunch">
+<link rel="canonical" href="https://btwymwt9rj-beep.github.io/tyger-deck/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="tyger deck">
+<meta property="og:title" content="tyger deck">
+<meta property="og:description" content="tyger deck | deployed with HTMLaunch">
+<meta property="og:url" content="https://btwymwt9rj-beep.github.io/tyger-deck/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fbtwymwt9rj-beep.github.io%2Ftyger-deck%2F?w=1200&h=630">
+<meta property="og:image:alt" content="tyger deck">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="tyger deck">
+<meta name="twitter:description" content="tyger deck | deployed with HTMLaunch">
+<meta name="twitter:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fbtwymwt9rj-beep.github.io%2Ftyger-deck%2F?w=1200&h=630">
+<meta name="twitter:image:alt" content="tyger deck">
+
+<meta charset="utf-8">
+<title>tyger deck</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFD9A0;--card:#FFF3E4;--paper:#EEE5D2;--ink:#5A2D2D;--ink2:#8A5A55;--orange:#F59B4B;--pink:#F7A8A8;--line:#5A2D2D;--tk:#1E1A17;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#3A2418;--card:#4A2F22;--paper:#E9DFCB;--ink:#FFE9CF;--ink2:#D9B79A;--line:#FFE9CF}}
+:root[data-theme="dark"]{--bg:#3A2418;--card:#4A2F22;--paper:#E9DFCB;--ink:#FFE9CF;--ink2:#D9B79A;--line:#FFE9CF}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font-family:'Fredoka','Trebuchet MS',system-ui,sans-serif;display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;align-items:center;gap:12px;padding:14px 18px 6px}
+header svg{width:52px;height:52px;flex:none}
+h1{margin:0;font-size:30px;font-weight:700}
+.count{margin-left:auto;background:var(--card);border:3px solid var(--line);border-radius:999px;padding:4px 14px;font-weight:600}
+.stage{flex:1;position:relative;min-height:0;margin:8px 18px 0;max-width:420px;width:calc(100% - 36px);align-self:center}
+.ticket{position:absolute;inset:0 0 28px 0;background:var(--card);border:4px solid var(--line);border-radius:30px;padding:14px;display:flex;touch-action:pan-y;user-select:none;-webkit-user-select:none;transition:transform .25s ease}
+.d1{transform:translateY(14px) scale(.95);pointer-events:none}
+.d2{transform:translateY(28px) scale(.9);pointer-events:none}
+.d0{cursor:grab;z-index:3}
+.d1,.d2{filter:brightness(.97)}
+.pop{animation:pop .3s ease}
+@keyframes pop{0%{transform:scale(.9) rotate(-3deg)}100%{transform:none}}
+.paper{background:var(--paper);color:var(--tk);padding:16px 18px 26px;width:100%;overflow-y:auto;border-radius:4px;scrollbar-width:none;
+-webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/14px 100%;mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/14px 100%}
+.paper::-webkit-scrollbar{display:none}
+.mascot{display:block;margin:0 auto;width:54px}
+.t-title{text-align:center;font-size:30px;font-weight:700;margin:6px 0 0;letter-spacing:1px}
+.t-sub{text-align:center;font-size:13px;letter-spacing:3px;font-weight:500;margin:2px 0 12px}
+.t-rule{border:0;border-top:2px dashed #c9bfa8;margin:10px 0}
+.t-solid{border:0;border-top:3px solid var(--tk);margin:12px 0}
+.t-img{width:100%;max-height:34vh;object-fit:cover;border-radius:10px;border:3px solid var(--tk);display:block;margin:8px 0;pointer-events:none}
+.t-text{font-size:21px;line-height:1.35;font-weight:500;white-space:pre-wrap;word-break:break-word;margin:6px 0}
+.t-foot{text-align:center;font-weight:600;font-size:18px;margin-top:10px}
+.t-meta{display:flex;justify-content:space-between;font-size:13px;letter-spacing:2px}
+.bar{display:flex;gap:10px;justify-content:center;padding:8px 18px 10px;flex-wrap:wrap}
+.bar.last{padding-bottom:16px;padding-top:0}
+button,.btn{font:inherit;font-weight:600;font-size:16px;color:var(--ink);background:var(--orange);border:3px solid var(--line);border-radius:999px;padding:8px 18px;cursor:pointer}
+button.pink{background:var(--pink)}button.cream,.btn.cream{background:var(--card)}
+button:disabled{opacity:.45}
+button:focus-visible,textarea:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+button:active{transform:translateY(1px)}
+.empty{text-align:center;padding:30px 10px;font-size:20px;color:var(--tk)}
+dialog{border:0;background:transparent;padding:0;width:min(440px,94vw);max-height:92vh;color:var(--ink);font-family:inherit}
+dialog::backdrop{background:rgba(60,30,20,.6)}
+.modal-card{background:var(--card);border:4px solid var(--line);border-radius:30px;padding:16px;display:flex;flex-direction:column;gap:10px;max-height:90vh;overflow-y:auto}
+.modal-card h2{margin:0;font-size:24px}
+textarea{font:inherit;font-size:18px;width:100%;min-height:130px;resize:vertical;background:var(--bg);color:var(--ink);border:3px solid var(--line);border-radius:18px;padding:10px 12px}
+.pick,.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+#prev{width:100%;max-height:150px;object-fit:cover;border-radius:12px;border:3px solid var(--line)}
+.hint{font-size:14px;color:var(--ink2);margin:0}
+</style>
+</head>
+<body>
+<header>
+<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="22" cy="24" r="16" fill="#F59B4B" stroke="#5A2D2D" stroke-width="5"/><circle cx="78" cy="24" r="16" fill="#F59B4B" stroke="#5A2D2D" stroke-width="5"/><circle cx="50" cy="56" r="40" fill="#F59B4B" stroke="#5A2D2D" stroke-width="5"/><ellipse cx="50" cy="64" rx="30" ry="25" fill="#FFF3E4"/><path d="M38 18l4 14M50 14v16M62 18l-4 14" stroke="#5A2D2D" stroke-width="5" stroke-linecap="round"/><path d="M34 54q5-6 10 0M56 54q5-6 10 0" fill="none" stroke="#5A2D2D" stroke-width="4" stroke-linecap="round"/><ellipse cx="50" cy="62" rx="4" ry="3" fill="#F7A8A8"/><path d="M44 70q6 8 12 0z" fill="#5A2D2D"/><circle cx="31" cy="64" r="6" fill="#F7A8A8" opacity=".8"/><circle cx="69" cy="64" r="6" fill="#F7A8A8" opacity=".8"/></svg>
+<h1>tyger deck</h1><div class="count" id="count">0 / 0</div>
+</header>
+<main class="stage" id="stage" aria-live="polite"></main>
+<div class="bar">
+<button class="cream" id="bPrev">‹ Back</button>
+<button id="bAdd">+ New ticket</button>
+<button class="cream" id="bNext">Next ›</button>
+</div>
+<div class="bar last">
+<button class="pink" id="bEdit">Edit</button>
+<button class="cream" id="bShuffle">Shuffle</button>
+<button class="cream" id="bMore">Backup</button>
+</div>
+
+<dialog id="dEdit"><div class="modal-card">
+<h2 id="eTitle">New ticket</h2>
+<textarea id="eText" placeholder="Write your reminder…" aria-label="Ticket text"></textarea>
+<img id="prev" alt="" hidden>
+<div class="pick">
+<label class="btn cream" for="eFile">Add picture</label><input id="eFile" type="file" accept="image/*" hidden>
+<button class="cream" id="eClear" hidden>Remove picture</button>
+</div>
+<p class="hint" id="eHint"></p>
+<div class="row"><button id="eSave">Save ticket</button><button class="cream" id="eCancel">Cancel</button><button class="pink" id="eDel" hidden>Delete</button></div>
+</div></dialog>
+
+<dialog id="dMore"><div class="modal-card">
+<h2>Backup</h2>
+<p class="hint">Tickets live in this browser on this device. Save a backup file to move your deck to another device. Loading a backup replaces the tickets you have now.</p>
+<div class="row"><button id="mExp">Save backup</button><label class="btn cream" for="mFile">Load backup</label><input id="mFile" type="file" accept=".json,application/json" hidden></div>
+<p class="hint" id="mMsg"></p>
+<button class="cream" id="mClose">Close</button>
+</div></dialog>
+
+<script>
+const $=id=>document.getElementById(id);
+const OLD='tygerDeck.v1',SEEDED='tygerDeck.seeded';
+let db=null,cards=[],order=[],pos=0,editing=null,imgData="",delArmed=false,memOnly=false,drag=null,busy=false;
+
+/* ---------- storage (IndexedDB) ---------- */
+function openDB(){return new Promise(res=>{try{const r=indexedDB.open('tygerDeck',1);r.onupgradeneeded=()=>r.result.createObjectStore('cards',{keyPath:'id'});r.onsuccess=()=>res(r.result);r.onerror=()=>res(null);r.onblocked=()=>res(null)}catch(e){res(null)}})}
+function run(fn){return new Promise(res=>{if(!db)return res(true);try{const t=db.transaction('cards','readwrite');fn(t.objectStore('cards'));t.oncomplete=()=>res(true);t.onerror=t.onabort=()=>res(false)}catch(e){res(false)}})}
+function dbAll(){return new Promise(res=>{if(!db)return res([]);try{const q=db.transaction('cards').objectStore('cards').getAll();q.onsuccess=()=>res(q.result||[]);q.onerror=()=>res([])}catch(e){res([])}})}
+const dbPut=c=>run(s=>s.put(c)), dbDel=id=>run(s=>s.delete(id));
+function lsGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function lsSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+
+/* ---------- helpers ---------- */
+const fmt=t=>new Date(t).toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric'}).toUpperCase();
+const esc=s=>{const d=document.createElement('div');d.textContent=s;return d.innerHTML};
+const byId=id=>cards.find(c=>c.id===id);
+function shuf(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function ticketHTML(c,i){return `<div class="paper">
+<svg class="mascot" viewBox="0 0 100 100"><circle cx="22" cy="24" r="16" fill="#F59B4B"/><circle cx="78" cy="24" r="16" fill="#F59B4B"/><circle cx="50" cy="54" r="40" fill="#F59B4B"/><circle cx="38" cy="50" r="4" fill="#1E1A17"/><circle cx="62" cy="50" r="4" fill="#1E1A17"/></svg>
+<h2 class="t-title">TYGER TICKET</h2><div class="t-sub">SAVED ${fmt(c.d)}</div><hr class="t-solid">
+${c.img?`<img class="t-img" src="${c.img}" alt="">`:''}<div class="t-text">${esc(c.text)}</div><hr class="t-rule">
+<div class="t-meta"><span>QTY 1</span><span>KEEP GOING</span></div><div class="t-foot">tyger deck</div></div>`}
+
+/* ---------- render ---------- */
+function render(popTop){
+ const n=order.length,st=$('stage');
+ $('bEdit').disabled=!n;$('bShuffle').disabled=n<2;$('bPrev').disabled=n<2;$('bNext').disabled=n<2;
+ $('count').textContent=(n?pos+1:0)+' / '+n;
+ if(!n){st.innerHTML='<div class="ticket d0"><div class="paper"><p class="empty">Your deck is empty.<br>Tap “+ New ticket” to add your first reminder.</p></div></div>';return}
+ let h='';
+ for(let i=Math.min(3,n)-1;i>=0;i--){const c=byId(order[(pos+i)%n]);h+=`<article class="ticket d${i}${i===0&&popTop?' pop':''}">${ticketHTML(c)}</article>`}
+ st.innerHTML=h;busy=false;
+}
+function step(k){const n=order.length;if(n<2||busy)return;pos=((pos+k)%n+n)%n;render()}
+function fling(dir){const el=$('stage').querySelector('.d0');if(!el||order.length<2){render();return}busy=true;el.style.transition='transform .22s ease-in,opacity .22s';el.style.transform=`translateX(${dir*130}%) rotate(${dir*14}deg)`;el.style.opacity='0';setTimeout(()=>{busy=false;step(1)},210)}
+
+/* ---------- swipe ---------- */
+const stage=$('stage');
+stage.addEventListener('pointerdown',e=>{const t=e.target.closest('.d0');if(!t||busy||order.length<2)return;drag={x:e.clientX,id:e.pointerId,el:t,dx:0,on:false}});
+stage.addEventListener('pointermove',e=>{if(!drag||e.pointerId!==drag.id)return;drag.dx=e.clientX-drag.x;if(!drag.on&&Math.abs(drag.dx)>8){drag.on=true;try{drag.el.setPointerCapture(drag.id)}catch(x){}drag.el.style.transition='none'}
+ if(drag.on)drag.el.style.transform=`translateX(${drag.dx}px) rotate(${drag.dx/18}deg)`});
+function endDrag(e){if(!drag||e.pointerId!==drag.id)return;const d=drag;drag=null;if(!d.on)return;
+ if(Math.abs(d.dx)>90)fling(d.dx>0?1:-1);else{d.el.style.transition='transform .2s ease';d.el.style.transform=''}}
+stage.addEventListener('pointerup',endDrag);stage.addEventListener('pointercancel',endDrag);
+$('bNext').onclick=()=>fling(1);$('bPrev').onclick=()=>step(-1);
+document.addEventListener('keydown',e=>{if(document.querySelector('dialog[open]'))return;if(e.key==='ArrowRight')fling(1);if(e.key==='ArrowLeft')step(-1)});
+
+/* ---------- shuffle / random ---------- */
+$('bShuffle').onclick=()=>{shuf(order);pos=0;render(true)};
+
+/* ---------- add / edit / delete ---------- */
+function setPrev(){$('prev').hidden=!imgData;if(imgData)$('prev').src=imgData;$('eClear').hidden=!imgData}
+function openEdit(c){delArmed=false;$('eDel').textContent='Delete';editing=c||null;imgData=c?c.img:"";$('eTitle').textContent=c?'Edit ticket':'New ticket';$('eText').value=c?c.text:'';setPrev();$('eDel').hidden=!c;$('eHint').textContent=memOnly?'Browser storage is unavailable, so tickets will be lost when you close this page.':'';$('dEdit').showModal()}
+$('bAdd').onclick=()=>openEdit();
+$('bEdit').onclick=()=>{if(order.length)openEdit(byId(order[pos]))};
+$('eCancel').onclick=()=>$('dEdit').close();
+$('eClear').onclick=()=>{imgData="";setPrev()};
+$('eFile').onchange=e=>{const f=e.target.files[0];e.target.value='';if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const m=1200,s=Math.min(1,m/Math.max(im.width,im.height));const c=document.createElement('canvas');c.width=Math.round(im.width*s);c.height=Math.round(im.height*s);c.getContext('2d').drawImage(im,0,0,c.width,c.height);imgData=c.toDataURL('image/jpeg',.8);setPrev()};im.onerror=()=>{$('eHint').textContent='That file could not be read as a picture.'};im.src=r.result};r.readAsDataURL(f)};
+$('eSave').onclick=async()=>{const t=$('eText').value.trim();if(!t&&!imgData){$('eHint').textContent='Add some text or a picture first.';return}
+ const c=editing||{id:Date.now()+Math.random(),d:Date.now()};const old={text:c.text,img:c.img};c.text=t;c.img=imgData;
+ const ok=await dbPut(c);
+ if(!ok){if(editing){c.text=old.text;c.img=old.img}$('eHint').textContent='Could not save. Browser storage may be full or turned off.';return}
+ if(!editing){cards.push(c);order.splice(pos,0,c.id)}
+ $('dEdit').close();render()};
+$('eDel').onclick=async()=>{if(!delArmed){delArmed=true;$('eDel').textContent='Tap again to delete';return}
+ const c=editing;await dbDel(c.id);cards=cards.filter(x=>x!==c);order=order.filter(id=>id!==c.id);if(pos>=order.length)pos=0;$('dEdit').close();render()};
+
+/* ---------- backup ---------- */
+$('bMore').onclick=()=>{$('mMsg').textContent='';$('dMore').showModal()};$('mClose').onclick=()=>$('dMore').close();
+$('mExp').onclick=()=>{const b=new Blob([JSON.stringify(cards)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='tyger-deck-backup.json';document.body.appendChild(a);a.click();a.remove();$('mMsg').textContent='If nothing downloaded, this page may block saving files. Ask Claude to add a copy-to-clipboard backup instead.'};
+$('mFile').onchange=e=>{const f=e.target.files[0];e.target.value='';if(!f)return;const r=new FileReader();r.onload=async()=>{try{const a=JSON.parse(r.result);if(!Array.isArray(a))throw 0;
+ const list=a.filter(x=>x&&typeof x.text==='string').map(x=>({id:x.id||Date.now()+Math.random(),text:x.text,img:x.img||'',d:x.d||Date.now()}));
+ await run(s=>{s.clear();list.forEach(c=>s.put(c))});cards=list;order=shuf(cards.map(c=>c.id));pos=0;render();$('mMsg').textContent='Loaded '+list.length+' tickets.'}catch(err){$('mMsg').textContent='That file is not a tyger deck backup.'}};r.readAsText(f)};
+
+/* ---------- start ---------- */
+(async()=>{
+ db=await openDB();memOnly=!db;
+ cards=await dbAll();
+ if(!cards.length){
+  let old=null;try{old=JSON.parse(lsGet(OLD)||'null')}catch(e){}
+  if(Array.isArray(old)&&old.length){cards=old.filter(x=>x&&typeof x.text==='string');await run(s=>cards.forEach(c=>s.put(c)))}
+  else if(!lsGet(SEEDED)){const t=Date.now();cards=[{id:1,text:"Discipline is choosing what you want most over what you want now.",img:"",d:t},{id:2,text:"Do it tired. Do it bored. Do it anyway.",img:"",d:t},{id:3,text:"Small steps, every day. The jar fills one tyger at a time.",img:"",d:t}];await run(s=>cards.forEach(c=>s.put(c)))}
+  lsSet(SEEDED,'1');
+ }
+ order=shuf(cards.map(c=>c.id));pos=0;render();
+})();
+</script>
+</body>
+</html>
